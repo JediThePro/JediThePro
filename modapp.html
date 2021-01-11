@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jedi Community Mod Application</title>
+    <script async src="https://arc.io/widget.min.js#aqi2DyRj"></script>
+    <meta
+      name="description"
+      content="Mod Application"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" />
+    <link
+      href="css/flexslider.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/magnific-popup.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link rel="icon" href="images/jedithepro.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/jedithepro.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+        new Crate({
+          server: '792999051594432523',
+          channel: '793004047254683678'
+        })
+      </script>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader-inner">
+        <svg
+          width="120"
+          height="220"
+          viewbox="0 0 100 100"
+          class="loading-spinner"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            class="spinner"
+            cx="50"
+            cy="50"
+            r="21"
+            fill="#2c2f33"
+            stroke-width="4"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container d-inline d-md-block">
+        <div class="floating-nav mt-lg-5">
+          <nav class="navbar navbar-expand-lg header-navbar">
+            <div class="navbar-brand">
+              <a class="navbar-brand navbar-logo" href="home">
+                <img class="mb-0" src="images/jedithepro.png" style="height: 60px" alt />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler btn-navbar-toggler"
+              data-toggle="collapse"
+              data-target=".nav-menu"
+              aria-expanded="true"
+              aria-label="Toggle navigation"
+            >
+              <span class="fa fa-bars"></span>
+            </button>
+            <div
+              class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end py-0"
+            >
+              <ul class="navbar-nav header-navbar-nav">
+                <li>
+                  <a class="navbar-dark-hover nav-link" href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a
+                    href="javascript:;"
+                    class="nav-link dropdown-toggle navbar-dark-hover"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    Server Info<span
+                      class="dropdown-arrow ml-2 navbar-dark-hover"
+                    >
+                      <span
+                        class="fa fa-angle-down dropdown-arrow-inner"
+                      ></span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="rules.html" >Rules</a></li>
+                    <li>
+                      <a class="dropdown-item" href="modapp.html"
+                        >Mod Application</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                    <li>
+                        <a class="dropdown-item" href="banappeal.html">Ban Appeal</a>
+                      </li>
+                  </ul>
+                </li>
+                <button
+                  class="btn-toggle"
+                  id="switch"
+                  onclick="if (!window.__cfRLUnblockHandlers) return false; toggleTheme()"
+                  data-cf-modified-150b054a31019ab1ad465998-
+                >
+                  <i id="toggle" class="toggle fas fa-sun"></i>
+                </button>
+                <script>
+                  function setTheme(themeName) {
+                    localStorage.setItem("theme", themeName);
+                    document.documentElement.className = themeName;
+                  }
+
+                  // function to toggle between light and dark theme
+                  function toggleTheme() {
+                    if (localStorage.getItem("theme") === "theme-dark") {
+                      setTheme("theme-light");
+                      document.getElementById("toggle").className =
+                        "toggle fas fa-sun";
+                    } else {
+                      setTheme("theme-dark");
+                      document.getElementById("toggle").className =
+                        "toggle fas fa-moon";
+                    }
+                  }
+
+                  // Immediately invoked function to set the theme on initial load
+                  (function () {
+                    if (localStorage.getItem("theme") === "theme-light") {
+                      setTheme("theme-light");
+                      document.getElementById("toggle").className =
+                        "toggle fas fa-sun";
+                      document.getElementById("slider").checked = true;
+                    } else {
+                      setTheme("theme-dark");
+
+                      document.getElementById("toggle").className =
+                        "toggle fas fa-moon";
+                      document.getElementById("slider").checked = false;
+                    }
+                  })();
+                </script>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="background-img gradient-overlay gradient-overlay-dark">
+        <div class="parallax"></div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="container height-70vh">
+            <div class="row justify-content-center text-center">
+              <div class="col-12 col-md-10 col-lg-10">
+                <h1 class="font-weight-bold mb-3 text-white" style="@import url('http://fonts.cdnfonts.com/css/whitney-2');
+                font-family: 'Whitney', sans-serif;
+              ">Mod Application</h1>
+                <p class="lead mb-5 text-white">Apply to be the Moderator</p>
+                <span>
+                  <a target="_blank" href="https://dsc.gg/jedi"
+                    ><img
+                      class="enlarge"
+                      style="height: 70px"
+                      src="fonts/Discord-Logo-White.svg" /></a
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-azure spacer-double-sm mb-0 d-none d-lg-block py-4" style="background: linear-gradient(90deg, rgba(0,121,255,1) 0%, rgba(0,172,255,1) 35%, rgba(0,255,204,1) 100%);">
+      <div class="card bg-transparent border-0">
+        <div class="card-body p-0">
+          <h1 class="text-white text-center mb-0">Mod Application</h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer-one-top-xs"></div>
+    <section class>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="mb-0 pb-5 text-dark text-center">
+              <div>
+                <h2 class="text-center mb-3 d-block d-lg-none">Server Rules</h2>
+              </div>
+              <p class="w-md-75 mb-0 mx-auto mb-2">
+                If you want to apply to be the moderator, you can apply <strong>here</strong>.
+              </p>
+              <p class="w-md-75 mb-3 mx-auto">
+                You can become a normal member if you broke the rules of Jedi Community.
+              </p>
+              <p class="mb-3 w-md-75 mx-auto">
+                For moderation purposes, this server is
+                <strong>English only.</strong>
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+       <div class="row justify-content-center">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBOW7m6Q9i2cr77uwW4YnNvUifobxy1uZewYCW9KWFH_tMJw/viewform?embedded=true" width="640" height="451" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+      </div>
+
+        <div class="container">
+          <div class="row justify-content-center d-none d-lg-block">
+            <div class="w-sm-75 w-100 top-1">
+              <img src="fonts/undraw_Group_chat_unwm.svg" alt />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-dark spacer-double-md">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 d-flex align-items-start flex-column">
+              <a class="d-inline-block mb-4" href="javascript:;">
+                <img src="images/jedithepro.png" class="footer-logo" alt />
+              </a>
+              <p class="font-size-12 text-light">
+                &copy; 2021 all rights reserved - JediThePro. <br />Made with
+                ❤️ by <span>Jedi</span>.
+              </p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-0">
+              <h3 class="h6 text-white mb-3 font-weight-600">Jedi Community</h3>
+              <div class="list-group list-group-flush">
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="rules.html"
+                  >Rules</a
+                >
+
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="https://forms.gle/iM7pFFwv8bR3tBAL9"
+                  >Mod Application</a
+                >
+
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="banappeal.html"
+                  >Ban Appeal</a
+                >
+
+                <a class="list-group-item list-group-item-action"
+                 href="faq.html"
+                >FAQ</a
+              >
+              </div>
+            </div>
+            <!-- </div> -->
+            <div class="col-6 col-md-4 col-lg-3 mb-0">
+              <h3 class="h6 text-white mb-3 font-weight-600">Social</h3>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item mb-2 mb-lg-0 mr-1">
+                  <a class="social-icon" href="https://dsc.gg/jedi"
+                    ><span class="fab fa-discord"></span
+                  ></a>
+                </li>
+                <li class="list-inline-item mr-1">
+                  <a
+                    class="social-icon"
+                    href="https://www.reddit.com/r/JediThePro/"
+                    ><span class="fab fa-reddit"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-to-top scroll" href="#wrapper"
+          ><span class="fa fa-angle-up top-icon"></span
+        ></a>
+
+        <script data-cfasync="false" src="js/email-decode.min.js"></script>
+        <script
+          src="js/jquery-1.12.4.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/bootstrap.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/bootstrap-dropdownhover.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/jquery.flexslider-min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/smooth-scroll.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/jquery.magnific-popup.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/jquery.countdown.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/typed.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/typeanimation.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/placeholders.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/script.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+
+        <script
+          src="js/rocket-loader.min.js"
+          data-cf-settings="150b054a31019ab1ad465998-|49"
+          defer
+        ></script>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jedi Community Rules</title>
+    <script async src="https://arc.io/widget.min.js#aqi2DyRj"></script>
+    <meta
+      name="description"
+      content="Rules"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" />
+    <link
+      href="css/flexslider.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/magnific-popup.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link rel="icon" href="images/jedithepro.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/jedithepro.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+        server: '792999051594432523',
+        channel: '793004047254683678'
+      })
+    </script>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader-inner">
+        <svg
+          width="120"
+          height="220"
+          viewbox="0 0 100 100"
+          class="loading-spinner"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            class="spinner"
+            cx="50"
+            cy="50"
+            r="21"
+            fill="#2c2f33"
+            stroke-width="4"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container d-inline d-md-block">
+        <div class="floating-nav mt-lg-5">
+          <nav class="navbar navbar-expand-lg header-navbar">
+            <div class="navbar-brand">
+              <a class="navbar-brand navbar-logo" href="index.html">
+                <img class="mb-0" src="images/jedithepro.png" style="height: 60px" alt />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler btn-navbar-toggler"
+              data-toggle="collapse"
+              data-target=".nav-menu"
+              aria-expanded="true"
+              aria-label="Toggle navigation"
+            >
+              <span class="fa fa-bars"></span>
+            </button>
+            <div
+              class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end py-0"
+            >
+              <ul class="navbar-nav header-navbar-nav">
+                <li>
+                  <a class="navbar-dark-hover nav-link" href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a
+                    href="javascript:;"
+                    class="nav-link dropdown-toggle navbar-dark-hover"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    Server Info<span
+                      class="dropdown-arrow ml-2 navbar-dark-hover"
+                    >
+                      <span
+                        class="fa fa-angle-down dropdown-arrow-inner"
+                      ></span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="rules.html" >Rules</a></li>
+                    <li>
+                      <a class="dropdown-item" href="modapp.html"
+                        >Mod Application</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                    <li>
+                      <a class="dropdown-item" href="banappeal.html">Ban Appeal</a>
+                    </li>
+                  </ul>
+                </li>
+                <button
+                  class="btn-toggle"
+                  id="switch"
+                  onclick="if (!window.__cfRLUnblockHandlers) return false; toggleTheme()"
+                  data-cf-modified-150b054a31019ab1ad465998-
+                >
+                  <i id="toggle" class="toggle fas fa-sun"></i>
+                </button>
+                <script>
+                  function setTheme(themeName) {
+                    localStorage.setItem("theme", themeName);
+                    document.documentElement.className = themeName;
+                  }
+
+                  // function to toggle between light and dark theme
+                  function toggleTheme() {
+                    if (localStorage.getItem("theme") === "theme-dark") {
+                      setTheme("theme-light");
+                      document.getElementById("toggle").className =
+                        "toggle fas fa-sun";
+                    } else {
+                      setTheme("theme-dark");
+                      document.getElementById("toggle").className =
+                        "toggle fas fa-moon";
+                    }
+                  }
+
+                  // Immediately invoked function to set the theme on initial load
+                  (function () {
+                    if (localStorage.getItem("theme") === "theme-light") {
+                      setTheme("theme-light");
+                      document.getElementById("toggle").className =
+                        "toggle fas fa-sun";
+                      document.getElementById("slider").checked = true;
+                    } else {
+                      setTheme("theme-dark");
+
+                      document.getElementById("toggle").className =
+                        "toggle fas fa-moon";
+                      document.getElementById("slider").checked = false;
+                    }
+                  })();
+                </script>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="background-img gradient-overlay gradient-overlay-dark">
+        <div class="parallax"></div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="container height-70vh">
+            <div class="row justify-content-center text-center">
+              <div class="col-12 col-md-10 col-lg-10">
+                <h1 class="font-weight-bold mb-3 text-white" style="@import url('http://fonts.cdnfonts.com/css/whitney-2');
+                font-family: 'Whitney', sans-serif;
+              ">Rules</h1>
+                <p class="lead mb-5 text-white">Read our Server Rules</p>
+                <span>
+                  <a target="_blank" href="https://dsc.gg/jedi"
+                    ><img
+                      class="enlarge"
+                      style="height: 70px"
+                      src="fonts/Discord-Logo-White.svg" /></a
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-azure spacer-double-sm mb-0 d-none d-lg-block py-4" style="background: linear-gradient(90deg, rgba(0,121,255,1) 0%, rgba(0,172,255,1) 35%, rgba(0,255,204,1) 100%);">
+      <div class="card bg-transparent border-0">
+        <div class="card-body p-0">
+          <h1 class="text-white text-center mb-0">Server Rules</h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer-one-top-xs"></div>
+    <section class>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="mb-0 pb-5 text-dark text-center">
+              <div>
+                <h2 class="text-center mb-3 d-block d-lg-none">Server Rules</h2>
+              </div>
+              <p class="w-md-75 mb-0 mx-auto mb-2">
+                It is our mission to make Jedi Community a safe and welcoming
+                place for all. Every day, over a thousand people from around the
+                world come together and express themselves on Jedi Community. It
+                is our goal to ensure all users have a valuable, inclusive and
+                welcoming experience. These rules outline what is and isn't
+                allowed on our Discord Server.
+              </p>
+              <p class="w-md-75 mb-3 mx-auto">
+                Please note: If you quote, influence or copy those that have
+                broken rules, you may also be punished; this includes attempting
+                to "bait" people into admitting they're under 13. In addition:
+                Not all rules are listed, please use common sense and avoid
+                finding "loopholes" in the rules. Read the channel topic of each
+                channel to view any additional rules that may be there.
+              </p>
+              <p class="mb-3 w-md-75 mx-auto">
+                <strong
+                  >Also, Make sure to follow Discord's
+                  <a href="https://discord.com/new/terms">Terms of Service</a>
+                  and
+                  <a href="https://discord.com/new/guidelines"
+                    >Community Guidelines</a
+                  ></strong
+                >
+              </p>
+              <p class="mb-3 w-md-75 mx-auto">
+                For moderation purposes, this server is
+                <strong>English only.</strong>
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>1.</strong> Treat everyone with respect. Absolutely no
+            harassment, witch hunting, sexism, racism, or hate speech will be
+            tolerated.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>2.</strong> No self-promotion (server invites,
+            advertisements, etc) without permission from a staff member. This
+            includes DM'ing fellow members.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>3.</strong> Do not post malicious links or files that could be used to steal
+            accounts or information anywhere, this includes surveys. For this
+            reason we automod all links in chats, so don't bypass the filter by
+            making adding characters so the automod cannot detect your links.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>4.</strong> Please keep your topics in the correct channel. For example, only
+            discuss topics related to gaming within the #gaming channel. You can
+            look at the channel topics/pins to see exactly what you must keep
+            on-topic there.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>5.</strong> To keep the server peaceful, please do not harass other users or
+            be toxic, such as by arguing in #general or insulting others.
+            Toxicity can mean: harassing users, discriminating users based on
+            their race or sexual orientation, being disruptive to staff,
+            organizing large hate trains/ralleys etc. Arguing involves fighting
+            with someone based on political views or other topics; if you would
+            like to argue with someone, do it in DMs and not in the server.
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            <strong>6.</strong> Don't spam within channels, this can mean:
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            - Typing separate lines very quickly
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            - Typing out large blocks of text
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            - Chaining (lyrics that make up a song etc)
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            - Posting the same images/emojis multiple times (up to 4 emojis at a
+            time)
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            - Posting/reacting with flashy GIFs or Emotes
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            This still applies if you quickly delete the messages afterwards.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>7.</strong> Please make sure all topics are appropriate for children. Nothing
+            can be posted, streamed or shared that is NSFW, sexually explicit,
+            relating to substance abuse, disturbing or that displays a grave
+            nature; this includes inappropriate profile pictures that have
+            'ahegao' or other insinuating images. Remember not to discuss topics
+            such as suicide, self-harm or abuse.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>8.</strong> Don't constantly beg for nitro, roles, items or anything similar
+            from anyone in the server. If this occurs in DMs we will not be able
+            to punish the user, we advise you block the user instead.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>9.</strong> Do not use alts maliciously such as by joining giveaways to give
+            yourself an unfair advantage or to bypass a punishment given to your
+            main account.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>10.</strong> Only play songs in the music voice channels; you aren't allowed
+            to play normal videos or songs with excessive swearing. This means
+            you can play songs with mild swearing, but please ensure none of the
+            lyrics contain racial slurs.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>11.</strong> No impersonation of people/bots with profile pictures or names.
+            They do not have to be in the server, it can be a bigger issue if
+            you trick users into believing you're actually the person you
+            impersonate. Impersonating anyone isn't allowed, especially if it is
+            identically so.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>12.</strong> You cannot have symbols in your name (including invisible names)
+            that cause users difficulty to ping you. The reason for this is
+            because it causes moderation to be slower, as we have to copy and
+            paste your name to tag you, and it decreases the visibility of chat.
+            All characters and symbols must be typeable on a standard English
+            QWERTY keyboard. Changing your nickname back to your previous
+            untaggable name after being warned may result in more action being
+            taken against you.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>13.</strong> Don't ask for personal information or distribute any personal
+            information without consent. Exposing private information may result
+            in a ban whether in the server or in DMs.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>14.</strong> You aren't allowed to misuse spoilers by making it look as if
+            you're swearing or saying something inappropriate, some examples of
+            this are 'f||rick|| you' or 'n||ugget||'. Using spoilers around a
+            word that may look like the N word will result in a ban, same goes
+            with any way you bypass the filter.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>15.</strong> You cannot annoy others in VC's with mic spamming or voice
+            changers. Also please remember to add a warning to loud videos or
+            audio you post within the server.
+          </div>
+          <div class="text-toggle col-lg-10 pb-3">
+            <strong>16.</strong> You aren't allowed to minimod. This means acting as a mod;
+            telling people they will be warned for breaking a rule or telling
+            others off if they are breaking a rule. If you have a problem please
+            ping an active staff member instead of acting as one yourself.
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            <strong>17.</strong> No interfering with moderator's duties, this could mean:
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            - Trolling them with fake/forged evidence
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            - Calling moderators without a good reason in chats
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            - Directly messaging them or @Jedi ModMail#9262 to troll within
+            a report
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            - Arguing with them in chats instead of messaging a higher ranked
+            staff member
+          </div>
+          <div class="text-toggle col-lg-10 pb-1">
+            - Don't misinform other users with serious questions on purpose
+          </div>
+          <div class="text-toggle w-75 mx-auto mt-4 text-center">
+            <p class="mb-0 small text-muted">
+              If you have any questions about the rules or would like to report
+              someone, please DM any staff member about it.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+        new Crate({
+          server: '792999051594432523',
+          channel: '793004047254683678'
+        });
+      </script>
+      <section class="spacer-one-top-md">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="mb-5 pb-5 text-center">
+                <h1 class="pb-3" style="@import url('http://fonts.cdnfonts.com/css/whitney-2');
+                font-family: 'Whitney', sans-serif;
+              ">Ready to join?</h1>
+                <button
+                  type="button"
+                  class="btn btn-wide"
+                  style="color: #ffffff; background: #7289da"
+                >
+                  <a class="text-white" href="https://dsc.gg/jedi"
+                    >Join Server</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-center d-none d-lg-block">
+            <div class="w-sm-75 w-100 top-1">
+              <img src="fonts/undraw_Group_chat_unwm.svg" alt />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-dark spacer-double-md">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 d-flex align-items-start flex-column">
+              <a class="d-inline-block mb-4" href="javascript:;">
+                <img src="images/jedithepro.png" class="footer-logo" alt />
+              </a>
+              <p class="font-size-12 text-light">
+                &copy; 2021 all rights reserved - JediThePro. <br />Made with
+                ❤️ by <span>Jedi</span>.
+              </p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-0">
+              <h3 class="h6 text-white mb-3 font-weight-600">Jedi Community</h3>
+              <div class="list-group list-group-flush">
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="rules.html"
+                  >Rules</a
+                >
+
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="modapp.html"
+                  >Mod Application</a
+                >
+
+                <a class="list-group-item list-group-item-action"
+                 href="faq.html"
+                >FAQ</a
+              >
+
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="banappeal.html"
+                  >Ban Appeal</a
+                >
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-0">
+              <h3 class="h6 text-white mb-3 font-weight-600">Social</h3>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item mb-2 mb-lg-0 mr-1">
+                  <a class="social-icon" href="https://dsc.gg/jedi"
+                    ><span class="fab fa-discord"></span
+                  ></a>
+                </li>
+                <li class="list-inline-item mr-1">
+                  <a
+                    class="social-icon"
+                    href="https://www.reddit.com/r/JediThePro/"
+                    ><span class="fab fa-reddit"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-to-top scroll" href="#wrapper"
+          ><span class="fa fa-angle-up top-icon"></span
+        ></a>
+
+        <script data-cfasync="false" src="js/email-decode.min.js"></script>
+        <script
+          src="js/jquery-1.12.4.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/bootstrap.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/bootstrap-dropdownhover.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/jquery.flexslider-min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/smooth-scroll.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/jquery.magnific-popup.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/jquery.countdown.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/typed.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/typeanimation.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/placeholders.min.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+        <script
+          src="js/script.js"
+          type="150b054a31019ab1ad465998-text/javascript"
+        ></script>
+
+        <script
+          src="js/rocket-loader.min.js"
+          data-cf-settings="150b054a31019ab1ad465998-|49"
+          defer
+        ></script>
+      </footer>
+    </section>
+  </body>
+</html>

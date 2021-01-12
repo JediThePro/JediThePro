@@ -5,7 +5,10 @@ var typed = new Typed(".typed", {
     "Come and chill.",
     "Made with ❤️ by Jedi.",
     "Have fun!",
-    "Jedi Community.",
+    "Jedi is the best.",
+    "Developer.",
+    "Stay home, stay safe!",
+    "Fight COVID-19."
   ],
   typeSpeed: 80,
   loop: true,

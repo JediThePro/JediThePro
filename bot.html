@@ -1,1 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="6j8MH8pR5IawavkCkbyC6XtnNpvJq1Il0GlFGU4kQAQ" />
+    <title>Jedi</title>
+    <script async src="https://arc.io/widget.min.js#M2VH8GET"></script>
+    <meta
+      name="description"
+      content="This is the website for Jedi."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" />
+    <link
+      href="css/flexslider.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/magnific-popup.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link rel="icon" href="images/jedithepro.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/jedithepro.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+        server: '792999051594432523',
+        channel: '793004047254683678'
+      })
+    </script>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader-inner">
+        <svg
+          width="120"
+          height="220"
+          viewbox="0 0 100 100"
+          class="loading-spinner"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            class="spinner"
+            cx="50"
+            cy="50"
+            r="21"
+            fill="#2c2f33"
+            stroke-width="4"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container d-inline d-md-block">
+        <div class="floating-nav mt-lg-5">
+          <nav class="navbar navbar-expand-lg header-navbar">
+            <div class="navbar-brand">
+               <a class="navbar-brand navbar-logo" href="index.html">
+                 <img class="srcaw" src="images/jedithepro.png" style="height: 60px" alt />
+               </a>
+            </div>
+            <button
+              class="navbar-toggler btn-navbar-toggler"
+              data-toggle="collapse"
+              data-target=".nav-menu"
+              aria-expanded="true"
+              aria-label="Toggle navigation"
+            >
+              <span class="fa fa-bars"></span>
+            </button>
+            <div
+              class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end py-0"
+            >
+              <ul class="navbar-nav header-navbar-nav">
+                <li>
+                  <a class="navbar-dark-hover nav-link" href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a
+                    href="javascript:;"
+                    class="nav-link dropdown-toggle navbar-dark-hover"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    Jedi<span
+                      class="dropdown-arrow ml-2 navbar-dark-hover"
+                    >
+                      <span
+                        class="fa fa-angle-down dropdown-arrow-inner"
+                      ></span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="jedi-faq.html">FAQ</a></li>
+                    <!--
+                    <li>
+                      <a class="dropdown-item" href="modapp.html"
+                        >Mod Application</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                    <li>
+                      <a class="dropdown-item" href="banappeal.html">Ban Appeal</a>
+                    </li>
+                    -->
+                  </ul>
+                </li>
+                <li>
+                <li class="dropdown">
+                  <a
+                    href="javascript:;"
+                    class="nav-link dropdown-toggle navbar-dark-hover"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    Jedi Community<span
+                      class="dropdown-arrow ml-2 navbar-dark-hover"
+                    >
+                      <span
+                        class="fa fa-angle-down dropdown-arrow-inner"
+                      ></span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="rules.html">Rules</a></li>
+                    <li>
+                      <a class="dropdown-item" href="modapp.html"
+                        >Mod Application</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                    <li>
+                      <a class="dropdown-item" href="banappeal.html">Ban Appeal</a>
+                    </li>
+                  </ul>
+                </li>
+                <button
+                  class="btn-toggle"
+                  id="switch"
+                  onclick="if (!window.__cfRLUnblockHandlers) return false; toggleTheme()"
+                  data-cf-modified-a7b898750be35ae0d99855cc-
+                >
+                  <i id="toggle" class="toggle fas fa-sun"></i>
+              </button>
+                <script>
+                  function setTheme(themeName) {
+                     localStorage.setItem('theme', themeName);
+                     document.documentElement.className = themeName;
+                  }
+
+                  // function to toggle between light and dark theme
+                  function toggleTheme() {
+                     if (localStorage.getItem('theme') === 'theme-dark') {
+                        setTheme('theme-light');
+                        document.getElementById("toggle").className = "toggle fas fa-sun";
+                     } else {
+                        setTheme('theme-dark');
+                        document.getElementById("toggle").className = "toggle fas fa-moon";
+                     }
+                  }
+
+                  // Immediately invoked function to set the theme on initial load
+                  (function () {
+                     if (localStorage.getItem('theme') === 'theme-light') {
+                        setTheme('theme-light');
+                        document.getElementById("toggle").className = "toggle fas fa-sun";
+                        document.getElementById('slider').checked = true
+
+                     } else {
+
+                        setTheme('theme-dark');
+
+                        document.getElementById("toggle").className = "toggle fas fa-moon";
+                        document.getElementById('slider').checked = false
+                     }
+                  })();
+                </script>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <section class="hero">
+      <div class="background-img gradient-overlay gradient-overlay-dark">
+        <div class="parallax"></div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-12 col-md-10 col-lg-10">
+            <div class="container height-70vh">
+              <div class="row justify-content-center text-center">
+                <div class="col-12 col-md-10 col-lg-10">
+                  <h1 class="display-4 mb-3 text-white">
+                    <span class="typed font-weight-600" style="@import url('http://fonts.cdnfonts.com/css/whitney-2');
+                    font-family: 'Whitney', sans-serif;
+                  "></span>
+                  </h1>
+                  <p class="lead mb-5 text-white" style="@import url('http://fonts.cdnfonts.com/css/whitney-2');
+                  font-family: 'Whitney', sans-serif;
+                ">
+                    Official Website for Jedi.
+                  </p>
+                  <span
+                    >
+                    <a target="_blank" href="https://dsc.gg/jedi"
+                      ><img
+                        class="enlarge"
+                        style="height: 70px"
+                        src="fonts/Discord-Logo-White.svg" /></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spacer-double-sm">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="mb-5 text-center">
+              <h1 class="pt-3" style="@import url('http://fonts.cdnfonts.com/css/whitney-2');
+              font-family: 'Whitney', sans-serif;
+            ">Join Jedi Community Today</h1>
+              <p class="w-md-75 mb-0 mx-auto" >
+                An EPIC Discord server for lovers of Discord.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <script
+          src="ifr.html"
+          type="a7b898750be35ae0d99855cc-text/javascript"
+        ></script>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col">
+            <a
+              class="btn btn-primary btn-wide mb-2 mb-md-0 mr-md-2"
+              href="https://dsc.gg/jedi"
+              >Join Now</a
+            >
+            <a
+              class="btn btn-blue-night btn-wide mb-2 mb-md-0"
+              href="rules.html"
+              >Rules</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="spacer-double-sm">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="mb-5 text-center">
+              <h1 class="pt-3" style="@import url('http://fonts.cdnfonts.com/css/whitney-2');
+              font-family: 'Whitney', sans-serif;
+            ">Join <a href="https://reddit.com/r/JediThePro">r/JediThePro</a></h1>
+              <p class="w-md-75 mb-0 mx-auto" >
+                EPIC subreddit for Jedi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <script
+          src="ifr.html"
+          type="a7b898750be35ae0d99855cc-text/javascript"
+        ></script>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col">
+            <a
+              class="btn btn-primary btn-wide mb-2 mb-md-0 mr-md-2"
+              href="https://reddit.com/r/JediThePro"
+              >Join r/JediThePro Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark spacer-double-md">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-4 d-flex align-items-start flex-column">
+            <a class="d-inline-block mb-4" href="javascript:;">
+               <img src="images/jedithepro.png" class="footer-logo" alt />
+            </a>
+            <p class="font-size-12 text-light">
+              &copy; 2021 all rights reserved - JediThePro. <br />Made with
+              ❤️ by <span>Jedi</span>.
+            </p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-0">
+            <h3 class="h6 text-white mb-3 font-weight-600">Jedi</h3>
+            <div class="list-group list-group-flush">
+              <a
+                class="list-group-item list-group-item-action"
+                href="jedi-faq.html"
+                >FAQ</a
+              >
+              <!--
+              <a
+                class="list-group-item list-group-item-action"
+                href=""
+                >Item #2</a
+              >
+
+              <a
+                class="list-group-item list-group-item-action"
+                href=""
+                >Item #3</a
+              >
+
+              <a
+                 class="list-group-item list-group-item-action"
+                 href=""
+                  >Item #4</a
+                >
+              -->
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-0">
+            <h3 class="h6 text-white mb-3 font-weight-600">Jedi Community</h3>
+            <div class="list-group list-group-flush">
+              <a
+                class="list-group-item list-group-item-action"
+                href="rules.html"
+                >Rules</a
+              >
+
+              <a
+                class="list-group-item list-group-item-action"
+                href="modapp.html"
+                >Mod Application</a
+              >
+
+              <a
+                class="list-group-item list-group-item-action"
+                href="faq.html"
+                >FAQ</a
+              >
+
+              <a
+                 class="list-group-item list-group-item-action"
+                 href="banappeal.html"
+                  >Ban Appeal</a
+                >
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 mb-0">
+            <h3 class="h6 text-white mb-3 font-weight-600">Social</h3>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mb-2 mb-lg-0 mr-1">
+                <a class="social-icon" href="https://dsc.gg/jedi"
+                  ><span class="fab fa-discord"></span
+                ></a>
+              </li>
+              <li class="list-inline-item mr-1">
+              </li>
+              <li class="list-inline-item mr-1">
+                <a
+                  class="social-icon"
+                  href="https://www.reddit.com/r/JediThePro/"
+                  ><span class="fab fa-reddit"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-to-top scroll" href="#wrapper"
+        ><span class="fa fa-angle-up top-icon"></span
+      ></a>
+
+      <script data-cfasync="false" src="js/email-decode.min.js"></script>
+      <script
+        src="js/jquery-1.12.4.min.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script
+        src="js/bootstrap.min.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script
+        src="js/bootstrap-dropdownhover.min.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script
+        src="js/jquery.flexslider-min.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script
+        src="js/smooth-scroll.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script
+        src="js/jquery.magnific-popup.min.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script
+        src="js/jquery.countdown.min.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script
+        src="js/typed.min.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script
+        src="js/typeanimation.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script
+        src="js/placeholders.min.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script
+        src="js/script.js"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+
+      <script
+        async
+        src="js_1"
+        type="a7b898750be35ae0d99855cc-text/javascript"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108622951-3');
+      </script>
+
+      <script
+        src="js/rocket-loader.min.js"
+        data-cf-settings="a7b898750be35ae0d99855cc-|49"
+        defer
+      ></script>
+    </footer>
+  </body>
+</html>
